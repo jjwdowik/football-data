@@ -25,6 +25,12 @@ module FootballData
             JSON.parse(response.body)
         end
 
+        def current_config
+            puts "x_api_version: #{@x_api_version}"
+            puts "api_key: #{@api_key}"
+            puts "response_control: #{@response_control}"
+        end
+
         private
 
         def parse_params(params)
