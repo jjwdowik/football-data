@@ -13,6 +13,7 @@ module FootballData
             yield self
             @response_control ||= DEFAULT_RESPONSE_CONTROL
             @x_api_version ||= DEFAULT_X_API_VERSION
+            @api_key ||= DEFAULT_API_KEY
         end
 
         def reset!
