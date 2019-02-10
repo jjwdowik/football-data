@@ -18,7 +18,7 @@ module FootballData
         # @param params [Hash] the filter parameters, :id is also pass by params
         def fetch(resource, subresource = nil, params = {})
             id, filter = parse_params(params)
-            path = "/#{@api_version}/#{resource}"
+            path = "/#{@x_api_version}/#{resource}"
             path += "/#{id}/#{subresource}" if id
             path += "?#{filter}" if filter
             response = get(path)
