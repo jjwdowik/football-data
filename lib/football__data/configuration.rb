@@ -14,7 +14,7 @@ module FootballData
             yield self
             @api_version ||= DEFAULT_API_VERSON
             @response_control ||= DEFAULT_RESPONSE_CONTROL
-            @x_api_version = DEFAULT_X_API_VERSION
+            @x_api_version ||= DEFAULT_X_API_VERSION
         end
 
         def reset!
