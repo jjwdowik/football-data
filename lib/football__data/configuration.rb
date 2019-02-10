@@ -3,7 +3,7 @@ module FootballData
         DEFAULT_API_KEY = nil
         DEFAULT_API_VERSON   = "alpha"
         DEFAULT_RESPONSE_CONTROL = "full"
-        DEFAULT_X_API_VERSION = 'v2.1'
+        DEFAULT_X_API_VERSION = 'v2'
 
         API_ENDPOINT = "http://api.football-data.org"
 
